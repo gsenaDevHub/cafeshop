@@ -1,0 +1,168 @@
+:root{
+    --tam-titulo-hero: 5rem;
+    --tam-subtitulo-hero: 1.6rem;
+    --tam-slogan-hero: 1.05rem;
+    --tam-indicador-scroll: 0.65rem;
+    --tam-selo-fundacao: 0.75rem;
+
+    --tam-titulo-secao: 3rem;
+    --tam-rotulo-secao: 0.72rem;
+
+    --tam-logo: 1.3rem;
+    --tam-link-nav: 0.78rem;
+
+    --tam-icone-categoria: 1.5rem;
+    --tam-titulo-categoria: 1.35rem;
+    --tam-item-cardapio: 0.95rem;
+    --tam-preco-cardapio: 0.88rem;
+    --tam-descricao-cardapio: 0.82rem;
+
+    --tam-citacao-historia: 1.4rem;
+    --tam-aspas-historia: 4rem;
+    --tam-assinatura-historia: 0.8rem;
+    --tam-ano-linha-tempo: 0.85rem;
+    --tam-ano-atual: 1rem;
+    --tam-rotulo-linha-tempo: 0.75rem;
+    --tam-texto-linha-tempo: 0.92rem;
+
+    --tam-depoimento: 1.25rem;
+    --tam-nome-cliente: 1.05rem;
+    --tam-mini-nome-cliente: 0.62rem;
+    --tam-estrela-avaliacao: 0.85rem;
+    --tam-aspas-depoimento: 5rem;
+
+    --tam-botao: 0.9rem;
+
+    --tam-marca-rodape: 1.6rem;
+    --tam-slogan-rodape: 0.85rem;
+    --tam-links-rodape: 0.85rem;
+    --tam-contato-rodape: 0.82rem;
+    --tam-copyright-rodape: 0.7rem;
+
+    --fonte-titulo: "Playfair Display", serif;
+    --fonte-corpo: "Lora", serif;
+    --fonte-vintage: "Special Elite", cursive;
+    --fonte-citacao: Georgia, serif;
+}
+
+header h3{
+    font-family: var(--fonte-titulo);
+    font-size: var(--tam-logo);
+    font-weight: 700;
+}
+
+header a{
+    font-family: var(--fonte-vintage);
+    font-size: var(--tam-link-nav);
+}
+
+.banner h6{
+    font-family: var(--fonte-vintage);
+    font-size: var(--tam-selo-fundacao);
+}
+
+.banner h1{
+    font-family: var(--fonte-titulo);
+    font-size: var(--tam-titulo-hero);
+    font-weight: 700;
+}
+
+.banner h3{
+    font-family: var(--fonte-titulo);
+    font-size: var(--tam-subtitulo-hero);
+    font-style: italic;
+    font-weight: 400;
+}
+
+.banner p:first-of-type{
+    font-family: var(--fonte-corpo);
+    font-size: var(--tam-slogan-hero);
+}
+
+.banner button{
+    font-family: var(--fonte-vintage);
+    font-size: var(--tam-botao);
+}
+
+.banner h5:last-of-type{
+    font-family: var(--fonte-vintage);
+    font-size: var(--tam-indicador-scroll);
+}
+
+.cardapio > h2,
+.historia > h2,
+.comentario > h2{
+    font-family: var(--fonte-titulo);
+    font-size: var(--tam-titulo-secao);
+    font-weight: 700;
+}
+
+.cardapio > h6,
+.historia > h6,
+.comentario > h6{
+    font-family: var(--fonte-vintage);
+    font-size: var(--tam-rotulo-secao);
+}
+
+.cardapio article h4{
+    font-family: var(--fonte-titulo);
+    font-size: var(--tam-titulo-categoria);
+    font-weight: 600;
+}
+
+.marks{
+    font-family: var(--fonte-titulo);
+    font-size: var(--tam-citacao-historia);
+    font-style: italic;
+    font-weight: 400;
+}
+
+.underline{
+    font-family: var(--fonte-vintage);
+    font-size: var(--tam-assinatura-historia);
+}
+
+.historia .card h5{
+    font-family: var(--fonte-titulo);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.historia .card em{
+    font-family: var(--fonte-corpo);
+    font-size: var(--tam-texto-linha-tempo);
+}
+
+.date{
+    font-size: var(--tam-ano-linha-tempo);
+    font-family: var(--fonte-vintage);
+}
+
+.date:last-child{
+    font-size: var(--tam-ano-atual);
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+}
+
+.comentario p{
+    font-family: var(--fonte-titulo);
+    font-size: var(--tam-depoimento);
+    font-style: italic;
+}
+
+.comentario .cliente{
+    font-family: var(--fonte-corpo);
+    font-size: var(--tam-nome-cliente);
+    font-style: italic;
+}
+
+footer h6{
+    font-family: var(--fonte-vintage);
+    font-size: var(--tam-copyright-rodape);
+}
+
+footer p{
+    font-family: var(--fonte-corpo);
+    font-size: var(--tam-slogan-rodape);
+    font-style: italic;
+}

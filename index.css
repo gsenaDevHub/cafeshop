@@ -1,0 +1,31 @@
+html{
+    width: 100%;
+}
+
+main, header, footer{
+    width: 90vw;
+    margin: 0 auto
+}
+
+header{
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.links{
+    display: flex;
+    gap: 20px;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+footer div{
+    flex: 1;
+}
+footer h6, footer p{
+    width:100%;
+}

@@ -44,3 +44,16 @@ button{
 .rodape{
     padding: 0 24px
 }
+ornamento-svg{
+    display: block;
+}
+.ornament{
+    width:200px;
+    margin:1rem auto;
+}
+coffee-svg{
+    display: block;
+}
+.coffee{
+    width: 120px;
+}

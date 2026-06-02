@@ -1,3 +1,5 @@
+@import "theme.css";
+
 :root{
     --tam-titulo-hero: 5rem;
     --tam-subtitulo-hero: 1.6rem;
@@ -55,10 +57,15 @@ header a{
     font-family: var(--fonte-vintage);
     font-size: var(--tam-link-nav);
 }
+h6::after, h6::before{
+    content: " ◆ ";
+    color: var(--cor-icone-cafe-);
+}
 
-.banner h6{
+h6{
     font-family: var(--fonte-vintage);
     font-size: var(--tam-selo-fundacao);
+    font-weight: 100;
 }
 
 .banner h1{
@@ -95,13 +102,6 @@ header a{
     font-family: var(--fonte-titulo);
     font-size: var(--tam-titulo-secao);
     font-weight: 700;
-}
-
-.cardapio > h6,
-.historia > h6,
-.comentario > h6{
-    font-family: var(--fonte-vintage);
-    font-size: var(--tam-rotulo-secao);
 }
 
 .cardapio article h4{
@@ -154,11 +154,6 @@ header a{
     font-family: var(--fonte-corpo);
     font-size: var(--tam-nome-cliente);
     font-style: italic;
-}
-
-footer h6{
-    font-family: var(--fonte-vintage);
-    font-size: var(--tam-copyright-rodape);
 }
 
 footer p{

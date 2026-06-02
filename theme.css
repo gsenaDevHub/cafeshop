@@ -9,3 +9,29 @@
     --cor-fundo-pagina: #f5ede0;
     --cor-fundo-card: #fdf6ec;
 }
+body{
+    background-color: var(--cor-fundo-pagina);
+}
+h6{
+    color: var(--cor-texto-secundario);
+}
+button{
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-fundo-escuro);
+    border: none;
+}
+button:nth-last-of-type(1){
+    background-color: var(--cor-fundo-card);
+    color: var(--cor-texto-principal);
+    border: 2px solid var(--cor-texto-principal);
+}
+footer{
+    background-color: var(--cor-texto-principal);
+    color: var(--cor-texto-fundo-escuro);
+}
+footer h5, footer .dia p:nth-child(2){
+    color: var(--cor-destaque);
+}
+.rodape{
+    background-color: var(--cor-fundo-rodape);
+}

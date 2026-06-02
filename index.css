@@ -1,31 +1,46 @@
 html{
     width: 100%;
 }
-
-main, header, footer{
-    width: 90vw;
-    margin: 0 auto
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
 }
 
 header{
     display: inline-flex;
-    width: 100%;
     align-items: center;
     justify-content: space-between;
 }
-.links{
+nav{
     display: flex;
-    gap: 20px;
+    gap: 24px;
 }
 footer{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
 }
 
 footer div{
     flex: 1;
+    margin: 24px;
+    text-align: center;
 }
-footer h6, footer p{
+footer section{
     width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .dia{
+    justify-content: space-around;
+}
+button{
+    padding: 16px 24px;
+    margin: 0 16px;
+    width: 200px;
+}
+.rodape{
+    padding: 0 24px
 }

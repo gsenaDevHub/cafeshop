@@ -1,16 +1,36 @@
 :root{
-    --cor-fundo-rodape: #1a0d06;
-    --cor-texto-principal: #2c1a0e;
-    --cor-primaria: #5c3317;
-    --cor-icone-cafe: #7a4520;
-    --cor-texto-secundario: #7a5c40;
-    --cor-destaque: #c8924a;
-    --cor-texto-fundo-escuro: #e8d9c4;
-    --cor-fundo-pagina: #f5ede0;
-    --cor-fundo-card: #fdf6ec;
+    --cor-fundo-rodape: #1f120b;
+    --cor-texto-principal: #2d1b12;
+
+    --cor-primaria: #6f3f1d;
+    --cor-icone-cafe: #8b5a2b;
+
+    --cor-texto-secundario: #7b624d;
+    --cor-destaque: #d4a05a;
+
+    --cor-texto-fundo-escuro: #f3e6d3;
+
+    --cor-fundo-pagina: #efe2d1;
+
+    --cor-fundo-card: #fffaf3;
 }
 body{
     background-color: var(--cor-fundo-pagina);
+}
+header{
+    background-color: var(--cor-fundo-rodape);
+    color: var(--cor-fundo-pagina);
+}
+nav a{
+    text-decoration: none;
+    color: var(--cor-fundo-pagina);
+    transition: 2s all ease;
+}
+nav a:hover{
+    border-radius: 10cap;
+    padding: .5em 1em;
+    background-color: var(--cor-fundo-pagina);
+    color: var(--cor-texto-principal);
 }
 h6{
     color: var(--cor-texto-secundario);
@@ -34,4 +54,7 @@ footer h5, footer .dia p:nth-child(2){
 }
 .rodape{
     background-color: var(--cor-fundo-rodape);
+}
+.cardapio .card{
+    background-color: var(--cor-fundo-card);
 }

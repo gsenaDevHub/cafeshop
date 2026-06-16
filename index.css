@@ -9,13 +9,41 @@ body{
 }
 
 header{
-    display: inline-flex;
+    padding: 20px;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.banner, .cardapio, .historia, .comentario{
+    margin: 0 10%;
+}
+.cardapio{
+    text-align: center;
+}
+.cardapio .container{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+}
+.cardapio .title{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+}
+.cardapio .card{
+    border: none;
+    border: 3cap;
+    padding: 2em;
+}
+.cardapio .card li{
+    text-align: left;
+    list-style:none;
+    margin-bottom: 10px;
+}
 nav{
     display: flex;
-    gap: 24px;
+    gap: 30px;
 }
 footer{
     display: flex;

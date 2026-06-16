@@ -7,16 +7,18 @@
     <title>Café Shop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&family=Playfair+Display:wght@400;600;700&family=Special+Elite&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&family=Playfair+Display:wght@400;600;700&family=Special+Elite&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
         <h3>Café Vintage</h3>
         <nav>
-            <a href="">Início</a>
             <a href="">Cardápio</a>
             <a href="">Nossa História</a>
             <a href="">Depoimentos</a>
@@ -25,7 +27,7 @@
     </header>
     <main>
         <div class="banner">
-            <coffee-svg></coffee-svg>
+            <img src="./banner.png" alt="" width="500px">
             <h6>Estabelecido em 1962</h6>
             <ornamento-svg class="ornament"></ornamento-svg>
             <h1>Café Vintage</h1>
@@ -36,30 +38,64 @@
             <h5>DESÇA PARA EXPLORAR</h5>
             <button>Ver Cardápio</button>
             <button>Nossa Hístoria</button>
+            <h6>Nossas Ofertas</h6>
         </div>
         <div class="cardapio">
-            <h6>Nossas Ofertas</h6>
-            <h2>Cardápio</h2>
-            <article class="cardapio card">
-                <h4>Cafés Especiais</h4>
-                            <ornamento-svg class="ornament"></ornamento-svg>
+                <h2>Cardápio</h2>
+                <ornamento-svg class="ornament"></ornamento-svg>
+            <div class="cardapio container">
+                <article class="card">
+                    <h4>Cafés Especiais</h4>
+                    <ornamento-svg class="ornament"></ornamento-svg>
 
-            </article>
-            <article class="cardapio card">
-                <h4>Chás & Infusões</h4>
-                            <ornamento-svg class="ornament"></ornamento-svg>
+                    <ul>
+                        <li>Espresso Tradicional - R$ 8,00</li>
+                        <li>Espresso Duplo - R$ 12,00</li>
+                        <li>Cappuccino Italiano - R$ 15,00</li>
+                        <li>Latte Cremoso - R$ 16,00</li>
+                        <li>Mocha Chocolate - R$ 18,00</li>
+                    </ul>
+                </article>
 
-            </article>
-            <article class="cardapio card">
-                <h4>Doces & Bolos</h4>
-                            <ornamento-svg class="ornament"></ornamento-svg>
+                <article class="card">
+                    <h4>Chás & Infusões</h4>
+                    <ornamento-svg class="ornament"></ornamento-svg>
 
-            </article>
-            <article class="cardapio card">
-                <h4>Salgados & Lanches</h4>
-                            <ornamento-svg class="ornament"></ornamento-svg>
+                    <ul>
+                        <li>Chá Verde Premium - R$ 10,00</li>
+                        <li>Chá de Camomila - R$ 9,00</li>
+                        <li>Infusão de Frutas Vermelhas - R$ 12,00</li>
+                        <li>Chá Preto Inglês - R$ 11,00</li>
+                        <li>Chá de Hortelã - R$ 9,00</li>
+                    </ul>
+                </article>
 
-            </article>
+                <article class="card">
+                    <h4>Doces & Bolos</h4>
+                    <ornamento-svg class="ornament"></ornamento-svg>
+
+                    <ul>
+                        <li>Cheesecake de Frutas Vermelhas - R$ 18,00</li>
+                        <li>Bolo de Cenoura com Chocolate - R$ 14,00</li>
+                        <li>Torta de Limão - R$ 16,00</li>
+                        <li>Brownie Artesanal - R$ 12,00</li>
+                        <li>Croissant Doce - R$ 10,00</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h4>Salgados & Lanches</h4>
+                    <ornamento-svg class="ornament"></ornamento-svg>
+
+                    <ul>
+                        <li>Pão de Queijo Artesanal - R$ 8,00</li>
+                        <li>Croissant de Presunto e Queijo - R$ 14,00</li>
+                        <li>Sanduíche Natural - R$ 18,00</li>
+                        <li>Quiche de Alho-Poró - R$ 16,00</li>
+                        <li>Empada de Frango - R$ 10,00</li>
+                    </ul>
+                </article>
+            </div>
         </div>
         <div class="historia">
             <h6>Uma Jornada no Tempo</h6>
@@ -69,42 +105,43 @@
             <h6 class="underline"> Dona Beatriz Almeida, fundadora</h6>
             <div class="historia card">
                 <h5>O Início de Tudo</h5>
-                <em>Dona Beatriz Almeida abriu as portas do Café Vintage em uma pequena esquina do centro histórico. Com 
-                    apenas cinco mesas e uma velha máquina italiana de espresso, ela serviu o primeiro café da casa.</em>
+                <em>Dona Beatriz Almeida abriu as portas do Café Vintage em uma pequena esquina do centro histórico. Com
+                    apenas cinco mesas e uma velha máquina italiana de espresso, ela serviu o primeiro café da
+                    casa.</em>
                 <div class="date">1962</div>
             </div>
             <div class="historia card">
                 <h5>A Grande Expansão</h5>
-                <em>Com a popularidade crescente, o café dobrou de tamanho e contratou seu primeiro barista 
-                    profissional, vindo diretamente de Milão. As receitas italianas passaram a conviver com 
+                <em>Com a popularidade crescente, o café dobrou de tamanho e contratou seu primeiro barista
+                    profissional, vindo diretamente de Milão. As receitas italianas passaram a conviver com
                     os sabores brasileiros.</em>
                 <div class="date">1971</div>
             </div>
             <div class="historia card">
                 <h5>Patrimônio Cultural</h5>
-                <em>O Café Vintage foi reconhecido como patrimônio cultural da cidade, preservando seu 
-                    mobiliário original de madeira maciça e as janelas com vitrais coloridos que ainda 
+                <em>O Café Vintage foi reconhecido como patrimônio cultural da cidade, preservando seu
+                    mobiliário original de madeira maciça e as janelas com vitrais coloridos que ainda
                     enfeitam o salão principal.</em>
                 <div class="date">1985</div>
             </div>
             <div class="historia card">
                 <h5>Novos Tempos, Mesma Alma</h5>
-                <em>Pedro Almeida, neto de Dona Beatriz, assumiu o comando sem alterar nenhuma 
-                    receita original. Modernizou a cozinha por trás das cenas, mantendo a 
+                <em>Pedro Almeida, neto de Dona Beatriz, assumiu o comando sem alterar nenhuma
+                    receita original. Modernizou a cozinha por trás das cenas, mantendo a
                     estética e o espírito dos anos 60 intactos.</em>
                 <div class="date">2001</div>
             </div>
             <div class="historia card">
                 <h5>Uma Tradição Viva</h5>
-                <em>Três gerações depois, o Café Vintage continua sendo o ponto de encontro 
-                    preferido dos moradores e visitantes. Cada xícara carrega décadas de 
+                <em>Três gerações depois, o Café Vintage continua sendo o ponto de encontro
+                    preferido dos moradores e visitantes. Cada xícara carrega décadas de
                     dedicação, memória e amor pelo bom café.</em>
                 <div class="date">Hoje</div>
             </div>
         </div>
         <div class="comentario">
             <h6> O Que Dizem Nossos Clientes</p>
-            <h2>Depoimentos</h2>
+                <h2>Depoimentos</h2>
         </div>
     </main>
     <footer>
@@ -112,13 +149,13 @@
             <img src="banner.png" alt="" width="200px">
             <h3>Café Vintage</h3>
             <h5><em>
-                Onde cada xícara conta uma história.
-                Desde 1962.
-            </em></h5>
+                    Onde cada xícara conta uma história.
+                    Desde 1962.
+                </em></h5>
         </div>
         <div class="horarios">
             <h5>Horário de Funcionamento</h5>
-                        <ornamento-svg class="ornament"></ornamento-svg>
+            <ornamento-svg class="ornament"></ornamento-svg>
 
             <section class="dia">
                 <p>Segunda - Sexta</p>
@@ -135,7 +172,7 @@
         </div>
         <div class="nosEncontre">
             <h5>Nos Encontre</h5>
-                        <ornamento-svg class="ornament"></ornamento-svg>
+            <ornamento-svg class="ornament"></ornamento-svg>
 
             <p>🚏 Rua das Flores, 142 — Centro Histórico</p>
             <p>📞 (11) 3456-7890</p>
@@ -144,12 +181,14 @@
         </div>
         <section class="rodape">
             <h6>© 2026 Café Vintage & Confeitaria · Todos os direitos reservados</h6>
-            <p>"In coffee we trust"</p> 
+            <p>"In coffee we trust"</p>
         </section>
     </footer>
     <script src="icons.js"></script>
     <script></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 :root{
     --cor-fundo-rodape: #1f120b;
-    --cor-texto-principal: #2d1b12;
+    --cor-texto-principal: #1b100b;
 
     --cor-primaria: #6f3f1d;
     --cor-icone-cafe: #8b5a2b;
@@ -9,6 +9,7 @@
     --cor-destaque: #d4a05a;
 
     --cor-texto-fundo-escuro: #f3e6d3;
+    --cor-banner-fundo-escuro:  #f3e6d399;
 
     --cor-fundo-pagina: #efe2d1;
 
@@ -21,16 +22,29 @@ header{
     background-color: var(--cor-fundo-rodape);
     color: var(--cor-fundo-pagina);
 }
+nav{
+    align-items: center;
+}
 nav a{
+    height: 25px;
+    padding: .5em 1em;
     text-decoration: none;
     color: var(--cor-fundo-pagina);
     transition: 2s all ease;
 }
 nav a:hover{
     border-radius: 10cap;
-    padding: .5em 1em;
-    background-color: var(--cor-fundo-pagina);
+    background-color:  var(--cor-fundo-pagina);
     color: var(--cor-texto-principal);
+}
+.nav-link-contato{
+    border-radius: 10cap;
+    background-color:  var(--cor-fundo-pagina);
+    color: var(--cor-texto-principal);
+}
+.nav-link-contato:hover{
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-fundo-escuro);
 }
 h6{
     color: var(--cor-texto-secundario);
@@ -52,9 +66,20 @@ footer{
 footer h5, footer .dia p:nth-child(2){
     color: var(--cor-destaque);
 }
+
 .rodape{
     background-color: var(--cor-fundo-rodape);
 }
 .cardapio .card{
     background-color: var(--cor-fundo-card);
+}
+
+.banner .container{
+    width: 100%;
+    max-width: none;
+    background-color: var(--cor-banner-fundo-escuro);
+}
+
+.banner .container h6{
+    color: var(--cor-texto-principal);
 }

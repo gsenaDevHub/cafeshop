@@ -2,7 +2,7 @@ html{
     width: 100%;
 }
 body{
-    margin: 0;
+    align-items: center;
 }
 *{
     box-sizing: border-box;
@@ -11,19 +11,21 @@ body{
 header{
     padding: 20px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
-.banner, .cardapio, .historia, .comentario{
+.historia, .comentario{
     margin: 0 10%;
 }
 .cardapio{
     text-align: center;
 }
 .cardapio .container{
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: none;
+    gap: 24px;
 }
 .cardapio .title{
     display: flex;
@@ -32,9 +34,9 @@ header{
     width: 100%;
 }
 .cardapio .card{
-    border: none;
-    border: 3cap;
-    padding: 2em;
+    width: 450px;
+    border-radius: 3cap;
+    padding: 1em;
 }
 .cardapio .card li{
     text-align: left;
@@ -43,7 +45,7 @@ header{
 }
 nav{
     display: flex;
-    gap: 30px;
+    gap: 10px;
 }
 footer{
     display: flex;
@@ -55,6 +57,7 @@ footer div{
     margin: 24px;
     text-align: center;
 }
+
 footer section{
     width:100%;
     display: flex;
@@ -76,7 +79,8 @@ ornamento-svg{
     display: block;
 }
 .ornament{
-    width:200px;
+    max-width: 200px;
+    width: auto;
     margin:1rem auto;
 }
 coffee-svg{
@@ -84,4 +88,15 @@ coffee-svg{
 }
 .coffee{
     width: 120px;
+}
+
+.principal{
+    background: fixed;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url("./Gemini_Generated_Image_vlwjl4vlwjl4vlwj.png");
+    background-size: cover;
+}
+.banner button{
+    margin-bottom: 24px;
 }

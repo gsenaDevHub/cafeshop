@@ -1,20 +1,27 @@
 @import "theme.css";
 
 :root{
-    /* Famílias tipográficas */
+    /* Fontes */
     --ff-titulo: "Playfair Display", serif;
-    --ff-texto: "Inter", sans-serif;
-    --ff-destaque: "Cormorant Garamond", serif;
+    --ff-texto: "Lora", serif;
+    --ff-destaque: "Special Elite", cursive;
 
     /* Tamanhos */
-    --fs-xs: 0.75rem;    /* 12px */
-    --fs-sm: 0.875rem;   /* 14px */
-    --fs-md: 1rem;       /* 16px */
-    --fs-lg: 1.125rem;   /* 18px */
-    --fs-xl: 1.5rem;     /* 24px */
-    --fs-2xl: 2rem;      /* 32px */
-    --fs-3xl
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-md: 1rem;
+    --fs-lg: 1.25rem;
+    --fs-xl: 1.5rem;
+    --fs-2xl: 2rem;
+    --fs-3xl: 3rem;
+    --fs-4xl: 5rem;
 
+    /* Pesos */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+}
 header h3{
     font-family: var(--ff-titulo);
     font-size: var(--fs-lg);

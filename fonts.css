@@ -1,27 +1,40 @@
-@import "theme.css";
-
 :root{
+    /* =========================
+       TIPOGRAFIA
+    ========================= */
+
     /* Fontes */
     --ff-titulo: "Playfair Display", serif;
     --ff-texto: "Lora", serif;
     --ff-destaque: "Special Elite", cursive;
+    --ff-citacao: Georgia, serif;
 
     /* Tamanhos */
-    --fs-xs: 0.75rem;
-    --fs-sm: 0.875rem;
-    --fs-md: 1rem;
-    --fs-lg: 1.25rem;
-    --fs-xl: 1.5rem;
-    --fs-2xl: 2rem;
-    --fs-3xl: 3rem;
-    --fs-4xl: 5rem;
+    --fs-xs: 0.75rem;      /* 12px */
+    --fs-sm: 0.875rem;     /* 14px */
+    --fs-md: 1rem;         /* 16px */
+    --fs-lg: 1.25rem;      /* 20px */
+    --fs-xl: 1.5rem;       /* 24px */
+    --fs-2xl: 2rem;        /* 32px */
+    --fs-3xl: 3rem;        /* 48px */
+    --fs-4xl: 5rem;        /* 80px */
 
     /* Pesos */
     --fw-regular: 400;
     --fw-medium: 500;
     --fw-semibold: 600;
     --fw-bold: 700;
+
+    /* Altura de linha */
+    --lh-texto: 1.6;
+    --lh-titulo: 1.2;
 }
+
+body{
+    font-family: var(--ff-texto);
+    line-height: var(--lh-texto);
+}
+
 header h3{
     font-family: var(--ff-titulo);
     font-size: var(--fs-lg);
@@ -31,12 +44,6 @@ header h3{
 header a{
     font-family: var(--ff-destaque);
     font-size: var(--fs-sm);
-}
-
-h6::after,
-h6::before{
-    content: " ◆ ";
-    color: var(--cafe-500);
 }
 
 h6{
@@ -49,6 +56,7 @@ h6{
     font-family: var(--ff-titulo);
     font-size: var(--fs-4xl);
     font-weight: var(--fw-bold);
+    line-height: var(--lh-titulo);
 }
 
 .banner h3{
@@ -89,7 +97,7 @@ h6{
 }
 
 .marks{
-    font-family: var(--ff-titulo);
+    font-family: var(--ff-citacao);
     font-size: var(--fs-xl);
     font-style: italic;
     font-weight: var(--fw-regular);

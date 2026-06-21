@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café Shop</title>
+    <title>La Cappuccina</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,136 +17,191 @@
 
 <body>
     <header>
-        <h3>Café Vintage</h3>
+        <h3>La Cappuccina</h3>
         <nav>
-            <a href="">Cardápio</a>
-            <a href="">Nossa História</a>
-            <a href="">Depoimentos</a>
-            <a href="" class="nav-link-container">Contato</a>
+            <a href="/pages/index.html">Cardápio</a>
+            <a href="/pages/historia.html">Nossa História</a>
+            <a href="/pages/contato.html">Contato</a>
+            <a href="/pages/pedidos.html">Pedidos</a>
         </nav>
     </header>
     <main>
-        <div class="banner principal">
-            <div class="banner container">
-                <img src=".public/banner.png" alt="" width="500px">
-                <h6>Estabelecido em 1962</h6>
-                <h1>Café Vintage</h1>
-                <h3><em>& Confeitaria</em></h3>
-                <p><em>Onde cada xícara conta uma história e o tempo parece desacelerar.
-                    </em>Desde 1962, servindo o melhor café da cidade.</p>
-    
-                <h5>DESÇA PARA EXPLORAR</h5>
-                <button>Ver Cardápio</button>
-                <button>Nossa Hístoria</button>
-            </div>
+    <div class="banner principal">
+        <div class="banner container">
+            <img src=".public/banner.png" alt="" width="500px">
+
+            <h6>Estabelecido em 1962</h6>
+            <h1>La Cappuccina</h1>
+            <h3><em>& Confeitaria</em></h3>
+
+            <p><em>Onde cada xícara conta uma história e o tempo parece desacelerar.</em>
+                Desde 1962, servindo o melhor café da cidade.
+            </p>
+
+            <h5>DESÇA PARA EXPLORAR</h5>
+
+            <button><a href="/index.html#cardapio">Ver Cardápio</a></button>
+            <button><a href="./pages/historia.html">Nossa História</a></button>
         </div>
-        <div class="cardapio">
-                <h2>Cardápio</h2>
+    </div>
+
+    <!-- CARDÁPIO -->
+    <div class="cardapio" id="cardapio">
+        <h2>Cardápio</h2>
+        <ornamento-svg class="ornament"></ornamento-svg>
+
+        <div class="cardapio container">
+
+            <article class="card">
+                <h4>Cafés Especiais</h4>
                 <ornamento-svg class="ornament"></ornamento-svg>
-            <div class="cardapio container">
-                <article class="card">
-                    <h4>Cafés Especiais</h4>
-                    <ornamento-svg class="ornament"></ornamento-svg>
 
-                    <ul>
-                        <li>Espresso Tradicional - R$ 8,00</li>
-                        <li>Espresso Duplo - R$ 12,00</li>
-                        <li>Cappuccino Italiano - R$ 15,00</li>
-                        <li>Latte Cremoso - R$ 16,00</li>
-                        <li>Mocha Chocolate - R$ 18,00</li>
-                    </ul>
-                </article>
+                <ul>
+                    <li>Espresso Tradicional - R$ 8,00
+                        <button class="add" data-name="Espresso Tradicional" data-price="8.00">Adicionar</button>
+                    </li>
 
-                <article class="card">
-                    <h4>Chás & Infusões</h4>
-                    <ornamento-svg class="ornament"></ornamento-svg>
+                    <li>Espresso Duplo - R$ 12,00
+                        <button class="add" data-name="Espresso Duplo" data-price="12.00">Adicionar</button>
+                    </li>
 
-                    <ul>
-                        <li>Chá Verde Premium - R$ 10,00</li>
-                        <li>Chá de Camomila - R$ 9,00</li>
-                        <li>Infusão de Frutas Vermelhas - R$ 12,00</li>
-                        <li>Chá Preto Inglês - R$ 11,00</li>
-                        <li>Chá de Hortelã - R$ 9,00</li>
-                    </ul>
-                </article>
+                    <li>Cappuccino Italiano - R$ 15,00
+                        <button class="add" data-name="Cappuccino Italiano" data-price="15.00">Adicionar</button>
+                    </li>
 
-                <article class="card">
-                    <h4>Doces & Bolos</h4>
-                    <ornamento-svg class="ornament"></ornamento-svg>
+                    <li>Latte Cremoso - R$ 16,00
+                        <button class="add" data-name="Latte Cremoso" data-price="16.00">Adicionar</button>
+                    </li>
 
-                    <ul>
-                        <li>Cheesecake de Frutas Vermelhas - R$ 18,00</li>
-                        <li>Bolo de Cenoura com Chocolate - R$ 14,00</li>
-                        <li>Torta de Limão - R$ 16,00</li>
-                        <li>Brownie Artesanal - R$ 12,00</li>
-                        <li>Croissant Doce - R$ 10,00</li>
-                    </ul>
-                </article>
+                    <li>Mocha Chocolate - R$ 18,00
+                        <button class="add" data-name="Mocha Chocolate" data-price="18.00">Adicionar</button>
+                    </li>
+                </ul>
+            </article>
 
-                <article class="card">
-                    <h4>Salgados & Lanches</h4>
-                    <ornamento-svg class="ornament"></ornamento-svg>
+            <article class="card">
+                <h4>Chás & Infusões</h4>
+                <ornamento-svg class="ornament"></ornamento-svg>
 
-                    <ul>
-                        <li>Pão de Queijo Artesanal - R$ 8,00</li>
-                        <li>Croissant de Presunto e Queijo - R$ 14,00</li>
-                        <li>Sanduíche Natural - R$ 18,00</li>
-                        <li>Quiche de Alho-Poró - R$ 16,00</li>
-                        <li>Empada de Frango - R$ 10,00</li>
-                    </ul>
-                </article>
+                <ul>
+                    <li>Chá Verde Premium - R$ 10,00
+                        <button class="add" data-name="Chá Verde Premium" data-price="10.00">Adicionar</button>
+                    </li>
+
+                    <li>Chá de Camomila - R$ 9,00
+                        <button class="add" data-name="Chá de Camomila" data-price="9.00">Adicionar</button>
+                    </li>
+
+                    <li>Infusão de Frutas Vermelhas - R$ 12,00
+                        <button class="add" data-name="Infusão de Frutas Vermelhas" data-price="12.00">Adicionar</button>
+                    </li>
+
+                    <li>Chá Preto Inglês - R$ 11,00
+                        <button class="add" data-name="Chá Preto Inglês" data-price="11.00">Adicionar</button>
+                    </li>
+
+                    <li>Chá de Hortelã - R$ 9,00
+                        <button class="add" data-name="Chá de Hortelã" data-price="9.00">Adicionar</button>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h4>Doces & Bolos</h4>
+                <ornamento-svg class="ornament"></ornamento-svg>
+
+                <ul>
+                    <li>Cheesecake de Frutas Vermelhas - R$ 18,00
+                        <button class="add" data-name="Cheesecake de Frutas Vermelhas" data-price="18.00">Adicionar</button>
+                    </li>
+
+                    <li>Bolo de Cenoura com Chocolate - R$ 14,00
+                        <button class="add" data-name="Bolo de Cenoura com Chocolate" data-price="14.00">Adicionar</button>
+                    </li>
+
+                    <li>Torta de Limão - R$ 16,00
+                        <button class="add" data-name="Torta de Limão" data-price="16.00">Adicionar</button>
+                    </li>
+
+                    <li>Brownie Artesanal - R$ 12,00
+                        <button class="add" data-name="Brownie Artesanal" data-price="12.00">Adicionar</button>
+                    </li>
+
+                    <li>Croissant Doce - R$ 10,00
+                        <button class="add" data-name="Croissant Doce" data-price="10.00">Adicionar</button>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h4>Salgados & Lanches</h4>
+                <ornamento-svg class="ornament"></ornamento-svg>
+
+                <ul>
+                    <li>Pão de Queijo Artesanal - R$ 8,00
+                        <button class="add" data-name="Pão de Queijo Artesanal" data-price="8.00">Adicionar</button>
+                    </li>
+
+                    <li>Croissant de Presunto e Queijo - R$ 14,00
+                        <button class="add" data-name="Croissant de Presunto e Queijo" data-price="14.00">Adicionar</button>
+                    </li>
+
+                    <li>Sanduíche Natural - R$ 18,00
+                        <button class="add" data-name="Sanduíche Natural" data-price="18.00">Adicionar</button>
+                    </li>
+
+                    <li>Quiche de Alho-Poró - R$ 16,00
+                        <button class="add" data-name="Quiche de Alho-Poró" data-price="16.00">Adicionar</button>
+                    </li>
+
+                    <li>Empada de Frango - R$ 10,00
+                        <button class="add" data-name="Empada de Frango" data-price="10.00">Adicionar</button>
+                    </li>
+                </ul>
+            </article>
+
+        </div>
+    </div>
+
+    <div class="carrinho">
+        <h2>Seu Pedido</h2>
+
+        <ul id="cart-items"></ul>
+
+        <h3>Total: R$ <span id="cart-total">0.00</span></h3>
+
+        <button id="finalizar">Finalizar Compra</button>
+    </div>
+
+    <div class="comentario">
+        <h6>O Que Dizem Nossos Clientes</h6>
+        <h2>Depoimentos</h2>
+
+        <div class="container">
+            <div class="card">
+                <h3 class="client">Marina S.</h3>
+                <p class="avaliacao">⭐⭐⭐⭐⭐</p>
+                <p class="texto">Cada visita é como voltar para casa.</p>
+            </div>
+
+            <div class="card">
+                <h3 class="client">Carlos M.</h3>
+                <p class="avaliacao">⭐⭐⭐⭐⭐</p>
+                <p class="texto">Uma instituição do café na cidade.</p>
+            </div>
+
+            <div class="card">
+                <h3 class="client">Ana P.</h3>
+                <p class="avaliacao">⭐⭐⭐⭐⭐</p>
+                <p class="texto">O aroma daqui é memória viva.</p>
             </div>
         </div>
-        <div class="historia">
-            <h6>Uma Jornada no Tempo</h6>
-            <h2>Nossa História</h2>
-            <h4 class="marks"><em>Um café não é apenas uma bebida — é uma pausa no mundo, um convite para existir
-                    plenamente no presente.</em></h4>
-            <h6 class="underline"> Dona Beatriz Almeida, fundadora</h6>
-            <div class="historia card">
-                <h5>O Início de Tudo</h5>
-                <em>Dona Beatriz Almeida abriu as portas do Café Vintage em uma pequena esquina do centro histórico. Com
-                    apenas cinco mesas e uma velha máquina italiana de espresso, ela serviu o primeiro café da
-                    casa.</em>
-                <div class="date">1962</div>
-            </div>
-            <div class="historia card">
-                <h5>A Grande Expansão</h5>
-                <em>Com a popularidade crescente, o café dobrou de tamanho e contratou seu primeiro barista
-                    profissional, vindo diretamente de Milão. As receitas italianas passaram a conviver com
-                    os sabores brasileiros.</em>
-                <div class="date">1971</div>
-            </div>
-            <div class="historia card">
-                <h5>Patrimônio Cultural</h5>
-                <em>O Café Vintage foi reconhecido como patrimônio cultural da cidade, preservando seu
-                    mobiliário original de madeira maciça e as janelas com vitrais coloridos que ainda
-                    enfeitam o salão principal.</em>
-                <div class="date">1985</div>
-            </div>
-            <div class="historia card">
-                <h5>Novos Tempos, Mesma Alma</h5>
-                <em>Pedro Almeida, neto de Dona Beatriz, assumiu o comando sem alterar nenhuma
-                    receita original. Modernizou a cozinha por trás das cenas, mantendo a
-                    estética e o espírito dos anos 60 intactos.</em>
-                <div class="date">2001</div>
-            </div>
-            <div class="historia card">
-                <h5>Uma Tradição Viva</h5>
-                <em>Três gerações depois, o Café Vintage continua sendo o ponto de encontro
-                    preferido dos moradores e visitantes. Cada xícara carrega décadas de
-                    dedicação, memória e amor pelo bom café.</em>
-                <div class="date">Hoje</div>
-            </div>
-        </div>
-        <div class="comentario">
-            <h6> O Que Dizem Nossos Clientes</p>
-                <h2>Depoimentos</h2>
-        </div>
-    </main>
+    </div>
+
+</main>
     <footer>
         <div class="banner">
-            <img src="banner.png" alt="" width="200px">
+            <img src=".public/banner.png" alt="" width="200px">
             <h3>Café Vintage</h3>
             <h5><em>
                     Onde cada xícara conta uma história.
@@ -184,11 +239,8 @@
             <p>"In coffee we trust"</p>
         </section>
     </footer>
-    <script src="icons.js"></script>
-    <script></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script src="./javascript/pedidos.js"></script>
+    <script src="./javascript/icons.js"></script>
 </body>
 
 </html>

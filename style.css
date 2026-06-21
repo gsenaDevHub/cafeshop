@@ -611,13 +611,6 @@ h6 {
     border-left: 4px solid var(--ambar-400);
 }
 
-.contato-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0;
-}
-
 .contato-info h3,
 .contato-form h3 {
     font-family: var(--ff-titulo);

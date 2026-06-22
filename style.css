@@ -934,4 +934,8 @@ coffee-svg {
         flex-direction: column;
         gap: 4px;
     }
+    .contato{
+        flex-direction: column;
+        gap: 2rem;
+    }
 }

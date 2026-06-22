@@ -30,3 +30,7 @@ O projeto segue uma organização modular para facilitar a manutenção:
 
 - Gabriel Henrique — desenvolvimento do HTML e JavaScript.
 - Giovanna — desenvolvimento do CSS.
+
+## Link para GitHub Pages e Youtube.
+- Pages: https://gsenadevhub.github.io/cafeshop/
+- Youtube: https://youtu.be/QIpCVmWU7nU

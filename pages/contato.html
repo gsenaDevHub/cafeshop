@@ -18,12 +18,20 @@
 <body>
     <header>
         <h3>La Cappuccina</h3>
-        <nav>
-            <a href="../index.html">Cardápio</a>
-            <a href="./historia.html">Nossa História</a>
-            <a href="./contato.html" class="nav-link-container">Contato</a>
-            <a href="./pedidos.html">Pedidos</a>
-        </nav>
+        <div class="menu-hamburguer">
+            <input id="menu-toggle" type="checkbox" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <div class="linha"></div>
+                <div class="linha"></div>
+                <div class="linha"></div>
+            </label>
+            <nav class="nav-links">
+                <a href="../index.html">Cardápio</a>
+                <a href="./historia.html">Nossa História</a>
+                <a href="./contato.html" class="nav-link-container">Contato</a>
+                <a href="./pedidos.html">Pedidos</a>
+            </nav>
+        </div>
     </header>
     <main>
         <div class="banner principal">
@@ -114,7 +122,7 @@
                 <p>"In coffee we trust"</p>
             </section>
         </footer>
-        <script src="./javascript/icons.js"></script>
+        <script src="../javascript/icons.js"></script>
 </body>
 
 </html>

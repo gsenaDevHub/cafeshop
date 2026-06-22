@@ -46,7 +46,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -113,12 +114,14 @@ h6 {
     font-weight: var(--fw-regular);
     color: var(--cafe-300);
 }
-.img-fluid{
+
+.img-fluid {
     display: flex;
     margin: 0 auto;
     max-width: 500px;
     max-height: 333px;
 }
+
 .principal {
     background: fixed;
     text-align: center;
@@ -145,10 +148,10 @@ h6 {
 .principal button:hover {
     transform: translateY(-3px);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-                rgba(0, 0, 0, 0.12) 0px -12px 30px,
-                rgba(0, 0, 0, 0.12) 0px 4px 6px,
-                rgba(0, 0, 0, 0.17) 0px 12px 13px,
-                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .principal button a {
@@ -205,9 +208,9 @@ h6 {
     text-align: center;
 }
 
-.cardapio > h2,
-.historia > h2,
-.comentario > h2 {
+.cardapio>h2,
+.historia>h2,
+.comentario>h2 {
     font-family: var(--ff-titulo);
     font-size: var(--fs-3xl);
     font-weight: var(--fw-bold);
@@ -276,7 +279,7 @@ h6 {
 }
 
 .finalizar-compra button:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
 }
 
 .carrinho {
@@ -346,15 +349,16 @@ h6 {
 
 #finalizar:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
 }
-.cardapio-lista{
+
+.cardapio-lista {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.cardapio-lista li p{
+.cardapio-lista li p {
     font-family: var(--ff-texto);
     font-size: var(--fs-sm);
     color: var(--mogno-900);
@@ -822,7 +826,7 @@ coffee-svg {
     background: #fff;
     border-radius: 14px;
     padding: 1.5rem;
-    box-shadow: 0 10px 25px rgba(0,0,0,.12);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .12);
     border-left: 5px solid var(--ambar-400);
     display: flex;
     flex-direction: column;
@@ -909,16 +913,18 @@ coffee-svg {
     background: #8f2c2c;
 }
 
-.menu-hamburguer{
+.menu-hamburguer {
     display: flex;
     align-items: center;
     gap: 1rem;
     position: relative;
     z-index: 5;
 }
-.menu-toggle{
+
+.menu-toggle {
     display: none;
 }
+
 .menu-icon {
     display: none;
     flex-direction: column;
@@ -927,22 +933,47 @@ coffee-svg {
     height: 30px;
     cursor: pointer;
 }
-.linha{
-        width: 100%;
-        height: 4px;
-        background-color: var(--linho-100);
-        border-radius: 2px;
-        transition: transform 0.25s ease, opacity 0.25s ease;
+
+.linha {
+    width: 100%;
+    height: 4px;
+    background-color: var(--linho-100);
+    border-radius: 2px;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+    transform-origin: center;
+}
+
+#menu-toggle:checked+.menu-icon .linha:nth-child(1) {
+    transform: translateY(8px) rotate(-45deg);
+}
+
+#menu-toggle:checked+.menu-icon .linha:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+#menu-toggle:checked+.menu-icon .linha:nth-child(3) {
+    transform: translateY(-12px) rotate(45deg);
+}
+
+@media (max-width: 782px) {
+    .menu-icon {
+        display: flex;
     }
-    #menu-toggle:checked + .menu-icon .linha:nth-child(1){
-        transform: rotate(-45deg) translate(-2px, 8px);
+    .principal, .painel{
+        margin-top: 60px;
     }
-    #menu-toggle:checked + .menu-icon .linha:nth-child(2){
-        opacity: 0;
-        transform: translateX(-20px);
+    
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--mogno-800);
+        z-index: 1000;
     }
-    #menu-toggle:checked + .menu-icon .linha:nth-child(3){
-        transform: rotate(45deg) translate(-2px, -8px);
+    .nav-links {
+        display: none;
         flex-direction: column;
         gap: 10px;
         position: absolute;
@@ -950,18 +981,22 @@ coffee-svg {
         align-items: flex-end;
         right: -20px;
         height: 100vh;
-        width: 200px;
+        width: 300px;
         background-color: var(--mogno-800);
         padding: 10px;
         border-radius: 8px;
+        transition: all 0.3s ease;
     }
-    .nav-links a{
+
+    .nav-links a {
         padding: 24px;
     }
-    .menu-toggle:checked ~ .nav-links {
+
+    .menu-toggle:checked~.nav-links {
         display: flex;
         
     }
+
     .historia .card {
         width: 100%;
     }
@@ -973,15 +1008,18 @@ coffee-svg {
     .historia::before {
         display: none;
     }
+
     .banner h1 {
         font-size: var(--fs-3xl);
     }
-    .cardapio-lista li{
+
+    .cardapio-lista li {
         display: flex;
         flex-direction: column;
         gap: 4px;
     }
-    .contato{
+
+    .contato {
         flex-direction: column;
         gap: 2rem;
     }

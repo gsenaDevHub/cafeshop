@@ -113,7 +113,12 @@ h6 {
     font-weight: var(--fw-regular);
     color: var(--cafe-300);
 }
-
+.img-fluid{
+    display: flex;
+    margin: 0 auto;
+    max-width: 500px;
+    max-height: 333px;
+}
 .principal {
     background: fixed;
     text-align: center;
@@ -343,6 +348,17 @@ h6 {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0,0,0,.2);
 }
+.cardapio-lista{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cardapio-lista li p{
+    font-family: var(--ff-texto);
+    font-size: var(--fs-sm);
+    color: var(--mogno-900);
+}
 
 .historia {
     position: relative;
@@ -518,8 +534,8 @@ h6 {
 
 .comentario .container,
 .comentario-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
     margin: 0 auto;
     padding: 0 1rem;
@@ -891,4 +907,31 @@ coffee-svg {
 
 .btn-cancelar:hover {
     background: #8f2c2c;
+}
+
+@media (max-width: 768px) {
+    
+    .historia .card {
+        width: 100%;
+    }
+
+    .historia .card::before {
+        display: none;
+    }
+
+    .historia::before {
+        display: none;
+    }
+    header, nav{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .banner h1 {
+        font-size: var(--fs-3xl);
+    }
+    .cardapio-lista li{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
 }
